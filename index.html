@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Card Processor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎓 Report Card Processor</h1>
+
+  <div class="input-section">
+    <label>Number of Subjects:</label>
+    <input type="number" id="subjects" value="3" min="1">
+    <label>Number of Students:</label>
+    <input type="number" id="studentCount" value="2" min="1">
+    <button id="generate">➕ Add Students</button>
+  </div>
+
+  <form id="studentForm">
+    <div id="students"></div>
+    <button type="submit">✅ Process</button>
+  </form>
+
+  <h2>Results</h2>
+  <table id="resultTable">
+    <thead>
+      <tr>
+        <th>Name</th><th>Average</th><th>Grade</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="summary"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
